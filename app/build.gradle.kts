@@ -21,11 +21,17 @@ dependencies {
     // This dependency is used by the application.
     implementation(libs.guava)
     implementation("org.json:json:20250517")
+    implementation("org.openjfx:javafx-controls:21.0.2")
+    implementation("org.openjfx:javafx-fxml:21.0.2")
 }
 
 javafx {
     version = "21.0.2"
-    modules = listOf("javafx.controls", "javafx.graphics")
+    modules = listOf(
+        "javafx.controls",
+        "javafx.graphics",
+        "javafx.fxml"
+    )
 }
 
 testing {
